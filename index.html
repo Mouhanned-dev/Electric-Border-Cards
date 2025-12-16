@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  
+  <title>Electric Border Cards</title><meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page">
+    <div class="cards">
+      <div class="card-wrapper" tabindex="0" data-size="md" style="--color:#00E5FF; --light:#00E5FF; --color-80:#00E5FF80; --color-99:#00E5FF99; --gradient:rgba(0,229,255,0.2); --width:350px; --height:500px">
+        <svg class="hidden-svg" aria-hidden="true">
+          <defs>
+            <filter id="turbulent-displace-blue" color-interpolation-filters="sRGB" x="-20%" y="-20%" width="140%" height="140%">
+              <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="1"></feTurbulence>
+              <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+                <animate attributeName="dy" values="700; 0" dur="6s" repeatCount="indefinite" calcMode="linear"></animate>
+              </feOffset>
+              <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="1"></feTurbulence>
+              <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+                <animate attributeName="dy" values="0; -700" dur="6s" repeatCount="indefinite" calcMode="linear"></animate>
+              </feOffset>
+              <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise3" seed="2"></feTurbulence>
+              <feOffset in="noise3" dx="0" dy="0" result="offsetNoise3">
+                <animate attributeName="dx" values="490; 0" dur="6s" repeatCount="indefinite" calcMode="linear"></animate>
+              </feOffset>
+              <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise4" seed="2"></feTurbulence>
+              <feOffset in="noise4" dx="0" dy="0" result="offsetNoise4">
+                <animate attributeName="dx" values="0; -490" dur="6s" repeatCount="indefinite" calcMode="linear"></animate>
+              </feOffset>
+              <feComposite in="offsetNoise1" in2="offsetNoise2" result="part1"></feComposite>
+              <feComposite in="offsetNoise3" in2="offsetNoise4" result="part2"></feComposite>
+              <feBlend in="part1" in2="part2" mode="color-dodge" result="combinedNoise"></feBlend>
+              <feDisplacementMap in="SourceGraphic" in2="combinedNoise" scale="30" xChannelSelector="R" yChannelSelector="B"></feDisplacementMap>
+            </filter>
+          </defs>
+        </svg>
+        <div class="card">
+          <div class="outer">
+            <div class="main" style="filter:url(#turbulent-displace-blue)"></div>
+          </div>
+          <div class="glow glow1"></div>
+          <div class="glow glow2"></div>
+          <div class="overlay overlay1"></div>
+          <div class="overlay overlay2"></div>
+          <div class="bg-glow"></div>
+          <div class="content">
+            <div class="content-top">
+              <div class="label-badge">
+                <div class="label-border"></div>
+                Mouhanned.dev
+              </div>
+              <p class="title">Electric Border — Aqua</p>
+            </div>
+            <hr class="divider">
+            <div class="content-bottom">
+              <p class="description">Bright aqua aura with animated electric border.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-wrapper" tabindex="0" data-size="md" style="--color:#FF9500; --light:#FFB84D; --color-80:#FF950080; --color-99:#FF950099; --gradient:rgba(255,149,0,0.2); --width:350px; --height:500px">
+        <svg class="hidden-svg" aria-hidden="true">
+          <defs>
+            <filter id="turbulent-displace-orange" color-interpolation-filters="sRGB" x="-20%" y="-20%" width="140%" height="140%">
+              <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="1"></feTurbulence>
+              <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+                <animate attributeName="dy" values="700; 0" dur="6s" repeatCount="indefinite" calcMode="linear"></animate>
+              </feOffset>
+              <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="1"></feTurbulence>
+              <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+                <animate attributeName="dy" values="0; -700" dur="6s" repeatCount="indefinite" calcMode="linear"></animate>
+              </feOffset>
+              <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise3" seed="2"></feTurbulence>
+              <feOffset in="noise3" dx="0" dy="0" result="offsetNoise3">
+                <animate attributeName="dx" values="490; 0" dur="6s" repeatCount="indefinite" calcMode="linear"></animate>
+              </feOffset>
+              <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise4" seed="2"></feTurbulence>
+              <feOffset in="noise4" dx="0" dy="0" result="offsetNoise4">
+                <animate attributeName="dx" values="0; -490" dur="6s" repeatCount="indefinite" calcMode="linear"></animate>
+              </feOffset>
+              <feComposite in="offsetNoise1" in2="offsetNoise2" result="part1"></feComposite>
+              <feComposite in="offsetNoise3" in2="offsetNoise4" result="part2"></feComposite>
+              <feBlend in="part1" in2="part2" mode="color-dodge" result="combinedNoise"></feBlend>
+              <feDisplacementMap in="SourceGraphic" in2="combinedNoise" scale="30" xChannelSelector="R" yChannelSelector="B"></feDisplacementMap>
+            </filter>
+          </defs>
+        </svg>
+        <div class="card">
+          <div class="outer">
+            <div class="main" style="filter:url(#turbulent-displace-orange)"></div>
+          </div>
+          <div class="glow glow1"></div>
+          <div class="glow glow2"></div>
+          <div class="overlay overlay1"></div>
+          <div class="overlay overlay2"></div>
+          <div class="bg-glow"></div>
+          <div class="content">
+            <div class="content-top">
+              <div class="label-badge">
+                <div class="label-border"></div>
+                Mouhanned.dev
+              </div>
+              <p class="title">Electric Border — Ember</p>
+            </div>
+            <hr class="divider">
+            <div class="content-bottom">
+              <p class="description">Warm ember tones with bold electric edges.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-wrapper" tabindex="0" data-size="md" style="--color:#7C3AED; --light:#A78BFA; --color-80:#7C3AED80; --color-99:#7C3AED99; --gradient:rgba(124,58,237,0.2); --width:350px; --height:500px">
+        <svg class="hidden-svg" aria-hidden="true">
+          <defs>
+            <filter id="turbulent-displace-purple" color-interpolation-filters="sRGB" x="-20%" y="-20%" width="140%" height="140%">
+              <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="1"></feTurbulence>
+              <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+                <animate attributeName="dy" values="700; 0" dur="6s" repeatCount="indefinite" calcMode="linear"></animate>
+              </feOffset>
+              <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="1"></feTurbulence>
+              <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+                <animate attributeName="dy" values="0; -700" dur="6s" repeatCount="indefinite" calcMode="linear"></animate>
+              </feOffset>
+              <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise3" seed="2"></feTurbulence>
+              <feOffset in="noise3" dx="0" dy="0" result="offsetNoise3">
+                <animate attributeName="dx" values="490; 0" dur="6s" repeatCount="indefinite" calcMode="linear"></animate>
+              </feOffset>
+              <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise4" seed="2"></feTurbulence>
+              <feOffset in="noise4" dx="0" dy="0" result="offsetNoise4">
+                <animate attributeName="dx" values="0; -490" dur="6s" repeatCount="indefinite" calcMode="linear"></animate>
+              </feOffset>
+              <feComposite in="offsetNoise1" in2="offsetNoise2" result="part1"></feComposite>
+              <feComposite in="offsetNoise3" in2="offsetNoise4" result="part2"></feComposite>
+              <feBlend in="part1" in2="part2" mode="color-dodge" result="combinedNoise"></feBlend>
+              <feDisplacementMap in="SourceGraphic" in2="combinedNoise" scale="30" xChannelSelector="R" yChannelSelector="B"></feDisplacementMap>
+            </filter>
+          </defs>
+        </svg>
+        <div class="card">
+          <div class="outer">
+            <div class="main" style="filter:url(#turbulent-displace-purple)"></div>
+          </div>
+          <div class="glow glow1"></div>
+          <div class="glow glow2"></div>
+          <div class="overlay overlay1"></div>
+          <div class="overlay overlay2"></div>
+          <div class="bg-glow"></div>
+          <div class="content">
+            <div class="content-top">
+              <div class="label-badge">
+                <div class="label-border"></div>
+                Mouhanned.dev
+              </div>
+              <p class="title">Electric Border — Neon</p>
+            </div>
+            <hr class="divider">
+            <div class="content-bottom">
+              <p class="description">Vivid neon glow with energetic border perturbation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
