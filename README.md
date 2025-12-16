@@ -25,22 +25,6 @@ Projet statique montrant trois cartes avec une bordure électrique animée (SVG 
 - Contenu :
   - Modifier le `label`, `title` et `description` dans `index.html`.
 
-## Pousser sur GitHub
-1. Créer un dépôt vide sur GitHub (sans README ni .gitignore).
-2. Dans ce dossier:
-   ```
-   git init
-   git add .
-   git commit -m "Initial commit: Electric Border Cards"
-   git branch -M main
-   git remote add origin https://github.com/<votre-compte>/<nom-du-repo>.git
-   git push -u origin main
-   ```
-
-## Déployer avec GitHub Pages (optionnel)
-- Activer GitHub Pages depuis les paramètres du dépôt (Source : `main` / `root`).
-- Après quelques secondes, votre page sera disponible à l’URL fournie par GitHub.
-
 ## Remarques
 - Les animations SVG (SMIL) sont supportées par les navigateurs modernes. Aucun JavaScript n’est requis pour l’animation du filtre.
 
